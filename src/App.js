@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './image2vector.svg';
 import './App.css';
 
 function App() {
@@ -6,17 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <form id="form">
+          <input type="search" className='Search-Box' id="query" name="q" placeholder="Type a keyword"></input>
+          <button className='Search-Button'>Search</button>
+        </form>
       </header>
     </div>
   );
